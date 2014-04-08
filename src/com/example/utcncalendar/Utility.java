@@ -39,6 +39,7 @@ public class Utility {
 		startDates.clear();
 		endDates.clear();
 		descriptions.clear();
+                // Gets all events from Google mail calendar.
 		for (int i = 0; i < 200; i++) {
 			nameOfEvent.add(cursor.getString(1));
 			startDates.add(getDate(Long.parseLong(cursor.getString(3))));
